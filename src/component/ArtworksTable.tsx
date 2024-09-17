@@ -53,14 +53,14 @@ const ArtworksTable = () => {
         setSelectedRows(selectedRows.filter(row => row.id !== e.data.id));
     };
 
-    const rowCheckboxTemplate = (rowData: Artwork) => {
-        return (
-            <Checkbox
-                onChange={(e) => e.checked ? onRowSelect({data: rowData}) : onRowUnselect({data: rowData})}
-                checked={selectedRows.some(row => row.id === rowData.id)}
-            />
-        );
-    };
+    // const rowCheckboxTemplate = (rowData: Artwork) => {
+    //     return (
+    //         <Checkbox
+    //             onChange={(e) => e.checked ? onRowSelect({data: rowData}) : onRowUnselect({data: rowData})}
+    //             checked={selectedRows.some(row => row.id === rowData.id)}
+    //         />
+    //     );
+    // };
 
    
     const togglePageInput = () => {
