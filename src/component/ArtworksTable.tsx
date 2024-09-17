@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { Checkbox } from 'primereact/checkbox';
+// import { Checkbox } from 'primereact/checkbox';
 import axios from 'axios';
 // import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
@@ -45,13 +45,13 @@ const ArtworksTable = () => {
         setPage(e.page + 1); 
     };
 
-    const onRowSelect = (e: any) => {
-        setSelectedRows([...selectedRows, e.data]);
-    };
+    // const onRowSelect = (e: any) => {
+    //     setSelectedRows([...selectedRows, e.data]);
+    // };
 
-    const onRowUnselect = (e: any) => {
-        setSelectedRows(selectedRows.filter(row => row.id !== e.data.id));
-    };
+    // const onRowUnselect = (e: any) => {
+    //     setSelectedRows(selectedRows.filter(row => row.id !== e.data.id));
+    // };
 
     // const rowCheckboxTemplate = (rowData: Artwork) => {
     //     return (
